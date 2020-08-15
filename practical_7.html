@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+    div.container4 {
+
+        height: 10em;
+
+        position: relative 
+
+    }
+
+    div.container4 h1 {
+
+        margin: 0;
+
+        position: absolute;
+
+        top: 50%;
+
+        left: 50%;
+
+        margin-right: -50%;
+
+        transform: translate(-50%, -50%) 
+
+        }
+
+    .circle {
+
+        height: 100px;
+
+        width: 100px;
+
+        background-color:yellow;
+
+        border-radius: 50%;
+
+        display: inline-block;
+
+        
+
+        }
+
+    .square {
+
+        height: 100px;
+
+        width: 100px;
+
+        background-color: red;
+
+        display: inline-block;
+
+    }  
+
+</style>
+
+</head>
+
+<body>
+
+<div style="background-color: grey;text-align: center;color: white;margin-left: 400px;margin-right: 400px;">
+
+  <h1>Heading</h1>
+
+</div>
+
+
+
+<p> </p>
+
+<div class=container4 style="background-color: aqua; color: white;margin-left: 400px;margin-right: 400px;">
+
+  <h1>Banner</h1>
+
+</div>
+
+
+
+<p> </p>
+
+<div style="text-align:center;">
+
+    <h1>Section-1</h1>
+
+    <span class="circle"></span>
+
+    <span class="circle"></span>
+
+    <span class="circle"></span>
+
+    <span class="circle"></span>
+
+  </div>
+
+
+
+<p> </p>
+
+<h1 style="text-align: center;">Section-2</h1>
+
+<canvas id="myCanvas" width="800" height="300" style="margin-left: 400px;margin-right: 400px;"></canvas>
+
+    <script>
+
+        var c = document.getElementById("myCanvas");
+
+        var ctx = c.getContext("2d");
+
+        
+
+        // black rectangle
+
+        ctx.beginPath();
+
+        ctx.lineWidth = "1";
+
+        ctx.strokeStyle = "gray";
+
+        ctx.fillRect(5, 5, 300, 270);
+
+        ctx.font = "20px Arial";  
+
+        ctx.fillStyle = "white";
+
+        ctx.fillText("Main Content",100,145);
+
+        ctx.stroke();
+
+        
+
+        // orange rectangle
+
+        ctx.beginPath();
+
+        ctx.lineWidth = "1";
+
+        ctx.fillStyle = "orange";
+
+        ctx.fillRect(320, 5, 300, 80);
+
+        ctx.font = "20px Arial";  
+
+        ctx.fillStyle = "white";
+
+        ctx.fillText("Article 1",430,55);
+
+        ctx.stroke();
+
+        
+
+        // orange rectangle
+
+        ctx.beginPath();
+
+        ctx.lineWidth = "1";
+
+        ctx.fillStyle = "orange";
+
+        ctx.fillRect(320, 100, 300, 80);
+
+        ctx.font = "20px Arial";  
+
+        ctx.fillStyle = "white";
+
+        ctx.fillText("Article 2",430,145);
+
+        ctx.stroke();
+
+
+
+        // orange rectangle
+
+        ctx.beginPath();
+
+        ctx.lineWidth = "1";
+
+        ctx.fillStyle = "orange";
+
+        ctx.fillRect(320, 195, 300, 80);
+
+        ctx.font = "20px Arial";  
+
+        ctx.fillStyle = "white";
+
+        ctx.fillText("Article 3",430,240);
+
+        ctx.stroke();
+
+        </script> 
+
+
+
+<p> </p>
+
+<div style="text-align:center;">
+
+    <h1>Section-3</h1>
+
+    <span class="square"></span>
+
+    <span class="square"></span>
+
+    <span class="square"></span>
+
+    <span class="square"></span>
+
+  </div>
+
+<p> </p>
+
+<div style="background-color:palevioletred;text-align: center;color: white; margin-left: 400px;margin-right: 400px;">
+
+    <h1>Footer</h1>
+
+</div>
+
+
+
+</body>
+
+</html>
